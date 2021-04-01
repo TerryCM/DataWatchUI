@@ -1,0 +1,48 @@
+{
+  "name": "next-mui-template",
+  "license": "",
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "build": "next build",
+    "start": "NODE_ENV=production node src/server.js",
+    "format": "prettier --write 'src/**/*.js'"
+  },
+  "nodemonConfig": {
+    "delay": 500,
+    "ext": "js json",
+    "watch": [
+      "src/*.js"
+    ],
+    "ignore": []
+  },
+  "prettier": {
+    "trailingComma": "es5",
+    "tabWidth": 4,
+    "bracketSpacing": true,
+    "arrowParens": "avoid",
+    "semi": false,
+    "singleQuote": true
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
+    "@material-ui/lab": "^4.0.0-alpha.57",
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "keycloak-connect": "^12.0.2",
+    "lottie-web": "^5.7.3",
+    "next": "^9.5.5",
+    "qs": "^6.9.6",
+    "react": "^16.13.1",
+    "react-cookie": "^4.0.3",
+    "react-dom": "^16.13.1",
+    "react-jdenticon": "0.0.8"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7",
+    "prettier": "^2.1.2"
+  }
+}
