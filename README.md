@@ -1,4 +1,4 @@
-# Next.js / Material UI Template
+# Next.js / Material UI Template DataWatch
 
 Starter template for new projects.
 
