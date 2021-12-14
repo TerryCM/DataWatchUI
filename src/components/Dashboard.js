@@ -5,11 +5,11 @@ import { Container, Box, Divider, IconButton, Typography, Toolbar, AppBar, Drawe
 import { Menu as MenuIcon, ChevronLeft as ChevronLeftIcon, Notifications as NotificationsIcon } from '@material-ui/icons'
 import UserMenu from "./UserMenu"
 import SideBar from "./SideBar"
-import TopBar from "./TopBar"
+//import TopBar from "./TopBar"
 import CyVerseServices from "./CyverseServices"
 import { CyVerseIcon, HelpChatIcon } from "./icons"
 
-const projectName = "Next/MUI Template"
+const projectName = "DataWatch"
 const drawerWidth = 235
 
 const useStyles = makeStyles((theme) => {
@@ -27,7 +27,7 @@ const useStyles = makeStyles((theme) => {
       },
       toolbarIcon: {
           display: 'flex',
-          color: '#ffffff',
+          color: 'primary',
           alignItems: 'center',
           justifyContent: 'flex-end',
           padding: '0 8px',
@@ -38,7 +38,7 @@ const useStyles = makeStyles((theme) => {
       },
       appBar: {
           zIndex: theme.zIndex.drawer + 1,
-          backgroundColor: '#6a1b9a',
+          backgroundColor: '#448aff',  // header color
           //backgroundImage: "url(backgroundImages/toppattern.svg)",
           transition: theme.transitions.create(['width', 'margin'], {
               easing: theme.transitions.easing.sharp,
@@ -67,7 +67,7 @@ const useStyles = makeStyles((theme) => {
           whiteSpace: 'nowrap',
           width: drawerWidth,
           color: '#ffffff',
-          backgroundColor: '#2c0c40',
+          backgroundColor: '#0d47a1', // section ncolor
           //backgroundColor: "#121212",
           //backgroundImage: "url(/backgroundImages/sidebarPattern.svg)",
           transition: theme.transitions.create('width', {
@@ -97,7 +97,7 @@ const useStyles = makeStyles((theme) => {
           paddingBottom: theme.spacing(5),
           paddingLeft: theme.spacing(5),
           paddingRight: theme.spacing(5),
-          backgroundColor: '#F4F4F4',
+          backgroundColor: theme.palette.background.default,
           maxWidth: '100%',
       },
       paper: {
@@ -204,12 +204,12 @@ export default function Dashboard(props) {
           </Drawer>
           <main className={classes.content}>
               <div className={classes.appBarSpacer} />
-              <TopBar
+              {/* <TopBar
                   title={props.title}
                   breadcrumbs={props.breadcrumbs}
                   back={props.back}
                   actions={props.actions}
-              />
+              /> */}
               <Container maxWidth="lg" className={classes.container}>
                   {props.children}
                   <Box pt={10}>

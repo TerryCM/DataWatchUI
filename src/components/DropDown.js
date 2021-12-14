@@ -74,7 +74,7 @@ export default function CustomizedMenus() {
             Option 1
           </ListItem>
           <ListItem>
-            Option 2
+            Option x
           </ListItem>
           <ListItem>
             Option 3

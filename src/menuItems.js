@@ -8,6 +8,13 @@ const menuItems = [
         path: '/home',
         items: []
     },
+
+    {
+    label: 'Listeners',
+    icon: <HomeIcon  size={1.5} />,
+    path: '/listeners',
+    items: [],
+    },
     {
         label: 'Help',
         icon: <HelpIcon fontSize="large" />,
